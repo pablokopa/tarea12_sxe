@@ -44,3 +44,17 @@ Y este es el resultado:
 
 </details>
 
+<details>
+<summary> <b> Apartado 3 </b></summary>
+
+```sql
+select * from EmpresasFCT order by fechaContacto
+```
+![imagen](https://github.com/user-attachments/assets/efa226e7-30b7-45c2-b944-f7bb5b5d58db)
+
+Y este es el resultado:
+
+![imagen](https://github.com/user-attachments/assets/a428af17-32f6-429c-aaa3-eae5ab5040eb)
+
+</details>
+
