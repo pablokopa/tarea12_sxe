@@ -58,3 +58,17 @@ Y este es el resultado:
 
 </details>
 
+<details>
+<summary> <b> Apartado 4 </b></summary>
+
+```sql
+select name, commercial_company_name from res_partner where city='Tracy' and is_company=False order by commercial_company_name
+```
+![imagen](https://github.com/user-attachments/assets/262bc9d3-adb3-40d7-bfab-ed01db14604a)
+
+Y este es el resultado:
+
+![imagen](https://github.com/user-attachments/assets/e0e9df50-dba5-4b45-b146-bb2a1f057f8c)
+
+</details>
+
