@@ -103,3 +103,16 @@ Y este es el resultado:
 ![imagen](https://github.com/user-attachments/assets/7e2dbdbe-ee80-4c3a-9c9c-b15ab1f818fd)
 
 </details>
+
+<details>
+<summary> <b> Apartado 7 </b></summary>
+
+```sql
+UPDATE res_partner
+SET email= replace(email, '@bilbao.example.com', '@bilbao.bizkaia.eus')
+WHERE email like '%@bilbao.example.com'
+```
+Muestra mensaje de actualziación:
+
+![imagen](https://github.com/user-attachments/assets/9923d809-e364-433b-8d9f-198227fb97cc)
+</details>
