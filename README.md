@@ -112,7 +112,28 @@ UPDATE res_partner
 SET email= replace(email, '@bilbao.example.com', '@bilbao.bizkaia.eus')
 WHERE email like '%@bilbao.example.com'
 ```
-Muestra mensaje de actualziación:
+Muestra mensaje de actualización:
 
 ![imagen](https://github.com/user-attachments/assets/9923d809-e364-433b-8d9f-198227fb97cc)
+</details>
+
+<details>
+<summary> <b> Apartado 8 </b></summary>
+Captura antes de eliminar los contactos:
+
+![imagen](https://github.com/user-attachments/assets/e99db4a8-5c94-4c1e-92b5-3364515382aa)
+
+```sql
+DELETE FROM res_partner
+WHERE commercial_company_name = 'Ready Mat' 
+AND is_company = FALSE;
+```
+Muestra mensaje de eliminación:
+
+![imagen](https://github.com/user-attachments/assets/5d21a689-871a-47be-b176-37915dd3f6b3)
+
+Y este es el resultado:
+
+![imagen](https://github.com/user-attachments/assets/3d07022d-d005-4e06-8e0e-fc4f2f0f0847)
+
 </details>
