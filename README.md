@@ -72,3 +72,17 @@ Y este es el resultado:
 
 </details>
 
+<details>
+<summary> <b> Apartado 5 </b></summary>
+
+```sql
+select distinct invoice_partner_display_name, name, invoice_date, amount_untaxed from account_move where move_type='in_refund' order by invoice_date
+```
+![imagen](https://github.com/user-attachments/assets/ac6237ec-470b-431f-a0b0-9d0b35326207)
+
+Y este es el resultado:
+
+![imagen](https://github.com/user-attachments/assets/ed200cab-4819-4212-bc81-8c559c52ebc0)
+
+</details>
+
