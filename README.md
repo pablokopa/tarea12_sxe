@@ -3,7 +3,7 @@
 Comienzo con los apartados tras haber realizado la instalación de la base de datos con la opción de “Demo
 data”, y tras haber instalado las aplicaciones de facturación y contactos.
 <details>
-<summary> <h2><b> Apartado 1 </b> </h2></summary>
+<summary> <b> Apartado 1 </b> </summary>
 
 Para crear la tabla de 'EmpresasFCT' he escrito lo siguiente:
 ```sql
@@ -20,6 +20,27 @@ CREATE TABLE IF NOT EXISTS public.EmpresasFCT(
 Y este es el resultado:
 
 ![imagen](https://github.com/user-attachments/assets/7bb2d4d9-c4b8-4841-a4dc-da3c75803831)
+
+</details>
+
+<details>
+<summary> <b> Apartado 2 </b></summary>
+
+```sql
+INSERT INTO public.EmpresasFCT (nombre, quiereAlumnos, numAlumnos, fechaContacto)
+VALUES
+    ('Empresa1', TRUE, 2, '2025-03-15'),
+    ('Empresa2', FALSE, 0, '2025-04-23'),
+    ('Empresa3', TRUE, 1, '2025-02-04'),
+    ('Empresa4', TRUE, 4, '2025-05-10'),
+    ('Empresa5', FALSE, 0, '2025-03-12');
+);
+```
+![imagen](https://github.com/user-attachments/assets/fc8b1e9f-30ac-4e7d-ba0c-520d0c53eb21)
+
+Y este es el resultado:
+
+![imagen](https://github.com/user-attachments/assets/e8854ec0-572a-4dfe-9523-cf02b6d8aa3c)
 
 </details>
 
