@@ -86,3 +86,20 @@ Y este es el resultado:
 
 </details>
 
+<details>
+<summary> <b> Apartado 6 </b></summary>
+
+```sql
+SELECT invoice_partner_display_name, count(distinct name), sum(distinct amount_untaxed) 
+FROM account_move
+WHERE move_type = 'out_invoice' and state = 'posted'
+GROUP BY invoice_partner_display_name
+HAVING COUNT(DISTINCT name) > 2;
+```
+![imagen](https://github.com/user-attachments/assets/99116e02-901a-400d-93d1-b8db2494f4ba)
+
+Y este es el resultado:
+
+![imagen](https://github.com/user-attachments/assets/7e2dbdbe-ee80-4c3a-9c9c-b15ab1f818fd)
+
+</details>
