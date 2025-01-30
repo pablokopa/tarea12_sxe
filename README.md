@@ -1,9 +1,9 @@
 # TAREA12_SXE 🌐
----
 Comienzo con los apartados tras haber realizado la instalación de la base de datos con la opción de “Demo
 data”, y tras haber instalado las aplicaciones de facturación y contactos.
 <details>
-<summary> <b> Apartado 1 </b> </summary>
+<summary> <b> ➡️ Apartado 1 </b> </summary>
+<br>
 
 Para crear la tabla de 'EmpresasFCT' he escrito lo siguiente:
 ```sql
@@ -24,7 +24,8 @@ Y este es el resultado:
 </details>
 
 <details>
-<summary> <b> Apartado 2 </b></summary>
+<summary> <b> ➡️ Apartado 2 </b></summary>
+<br>
 
 ```sql
 INSERT INTO public.EmpresasFCT (nombre, quiereAlumnos, numAlumnos, fechaContacto)
@@ -45,7 +46,8 @@ Y este es el resultado:
 </details>
 
 <details>
-<summary> <b> Apartado 3 </b></summary>
+<summary> <b> ➡️ Apartado 3 </b></summary>
+<br>
 
 ```sql
 select * from EmpresasFCT order by fechaContacto
@@ -59,7 +61,8 @@ Y este es el resultado:
 </details>
 
 <details>
-<summary> <b> Apartado 4 </b></summary>
+<summary> <b> ➡️ Apartado 4 </b></summary>
+<br>
 
 ```sql
 select name, commercial_company_name from res_partner where city='Tracy' and is_company=False order by commercial_company_name
@@ -73,7 +76,8 @@ Y este es el resultado:
 </details>
 
 <details>
-<summary> <b> Apartado 5 </b></summary>
+<summary> <b> ➡️ Apartado 5 </b></summary>
+<br>
 
 ```sql
 select distinct invoice_partner_display_name, name, invoice_date, amount_untaxed from account_move where move_type='in_refund' order by invoice_date
@@ -87,7 +91,8 @@ Y este es el resultado:
 </details>
 
 <details>
-<summary> <b> Apartado 6 </b></summary>
+<summary> <b> ➡️ Apartado 6 </b></summary>
+<br>
 
 ```sql
 SELECT invoice_partner_display_name, count(distinct name), sum(distinct amount_untaxed) 
@@ -105,7 +110,8 @@ Y este es el resultado:
 </details>
 
 <details>
-<summary> <b> Apartado 7 </b></summary>
+<summary> <b> ➡️ Apartado 7 </b></summary>
+<br>
 
 ```sql
 UPDATE res_partner
@@ -118,7 +124,9 @@ Muestra mensaje de actualización:
 </details>
 
 <details>
-<summary> <b> Apartado 8 </b></summary>
+<summary> <b> ➡️ Apartado 8 </b></summary>
+<br>
+	
 Captura antes de eliminar los contactos:
 
 ![imagen](https://github.com/user-attachments/assets/e99db4a8-5c94-4c1e-92b5-3364515382aa)
